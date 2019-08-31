@@ -1,0 +1,22 @@
+{
+  "name": "t1",
+  "version": "1.0.0",
+  "description": "RC tractor with advanced controls",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElectronicExcitement/t1.git"
+  },
+  "author": "Jan Duras",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElectronicExcitement/t1/issues"
+  },
+  "homepage": "https://github.com/ElectronicExcitement/t1#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}

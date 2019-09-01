@@ -6,4 +6,4 @@ const request = require('request');
     console.log('body:', req.params.id && req.params.success); // Print the HTML for the Google homepage.
 });*/
 
-request.post('http://10.0.0.8:3000/api/:relay').form({ id: Math.random(), success: Boolean() });
+request.post('http://10.0.0.8:3000/api/relay').form({ id: Math.random() * 10, success: true });

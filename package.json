@@ -4,7 +4,9 @@
   "description": "RC tractor with advanced controls",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html == public-url ./"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,13 @@
   },
   "homepage": "https://github.com/ElectronicExcitement/t1#readme",
   "dependencies": {
-    "parcel-bundler": "^1.12.3"
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "parcel-bundler": "^1.12.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "request": "^2.88.0",
+    "server.js": "^1.0.0"
   }
 }

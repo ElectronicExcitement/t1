@@ -4,7 +4,7 @@ const cors = require('cors');
 const server = express();
 const port = 3000;
 const corsOptions = {
-    origin: 'http://10.0.0.13:1234',
+    origin: '*',
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 

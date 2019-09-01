@@ -6,8 +6,8 @@ import styled from 'styled-components';
 function App() {
     const request = require('request');
     
-    const relayOnConst = relayOn => { request.post('http://10.0.0.8:3000/api/relay').form({ state: true }) };
-    const relayOffConst = relayOff => { request.post('http://10.0.0.8:3000/api/relay').form({ state: false }) };
+    const relayOnConst = relayOn => { request.post('http://10.0.0.8:3000/api/relay').form({ state: 1 }) };
+    const relayOffConst = relayOff => { request.post('http://10.0.0.8:3000/api/relay').form({ state: 0 }) };
 
     return (
         request.post('http://10.0.0.8:3000/api/relay').form({ id: Math.floor(Math.random() * 10) }),

@@ -18,6 +18,7 @@ server.use(bodyParser.urlencoded({ extended: true }));
 server.post('/api/relay', cors(corsOptions), async (req, res) => {
     await gpiop.setup(16, gpio.DIR_OUT);
     await gpiop.write(16, true);
+    await gpiop.write(16, false);
 
     res.send(req.body);
 });

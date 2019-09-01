@@ -11,7 +11,12 @@ const corsOptions = {
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: true }));
 
-server.get('/api/:relay', cors(corsOptions), (req, res) => res.send(req.params.relay));
-server.post('/api/:relay', cors(corsOptions), (req, res) => res.send(req.params.relay));
+//server.get('/api/:relay', cors(corsOptions), (req, res) => res.send(req.params.relay));
+server.post('/api/:relay', cors(corsOptions), (req, res) => {
+    const id = req.id;
+    const success = req.success;
+
+    res.send(id + ' ' + success);
+});
 
 server.listen(port, () => console.log(`Server listening on port ${port}`));
